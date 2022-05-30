@@ -1,19 +1,3 @@
-/* Null CSS */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li, 
-h3 {
-  list-style: none;
-}
-
-input,
-button {
-  outline: none;
-}
-
 /* Basic Style */
 body {
   background-color: #f8f8f8;
@@ -68,6 +52,7 @@ body {
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
 .tasks__button:hover {
@@ -83,6 +68,7 @@ body {
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .tasks__input {
@@ -97,6 +83,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
   flex-grow: 1;
+  outline: none;
 }
 
 .tasks__input:focus {
@@ -110,10 +97,17 @@ body {
 }
 
 /* Task list */
+.tasks__incompleted,
+.tasks__completed {
+  margin: 0;
+  padding: 0;
+}
+
 .tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
+  list-style: none;
 
   display: flex;
   justify-content: space-between;
